@@ -26,7 +26,7 @@ export default function App() {
     setFocusHistory([]);
   };
 
-  // Serialize Out
+  // Serialize
   const saveFocusHistory = async () => {
     try {
       await AsyncStorage.setItem('focusHistory', JSON.stringify(focusHistory));
